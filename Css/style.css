@@ -31,6 +31,20 @@ img {
   max-width: 1920px;
   margin: 0 auto;
 }
+
+.logo {
+  font-family: "Post No Bills Jaffna SemiBold";
+  font-size: 36px;
+  line-height: 54px;
+  color: #ffffff;
+}
+.sublogo {
+  font-family: "Raleway";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+}
 /* header style start */
 .header {
   padding: 30px 0px;
@@ -43,21 +57,10 @@ img {
   background-color: #242b33;
   z-index: 100;
 }
-
-.header__logo-full {
-}
-.header__logo {
-  font-family: "Post No Bills Jaffna SemiBold";
-  font-size: 36px;
-  line-height: 54px;
-  color: #ffffff;
-}
-.header__sublogo {
-  font-family: "Raleway";
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.12em;
-  color: #ffffff;
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__nav ul {
@@ -85,11 +88,6 @@ img {
   opacity: 0.7;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 /* header style end */
 
 /* welcome style statr*/
@@ -150,7 +148,7 @@ img {
   margin-bottom: 120px;
   text-align: center;
 }
-.about__wrapper {
+.about__container {
   display: flex;
   justify-content: space-between;
   margin: 0px 563px;
@@ -176,11 +174,12 @@ img {
 /* preview style start */
 
 .preview {
+  width: 100%;
   margin-bottom: 180px;
 }
 
 .preview__container {
-  width: 1100px;
+  max-width: 1100px;
   height: 806px;
   margin-left: 410px;
 }
@@ -245,7 +244,7 @@ img {
 
 /* preview style end */
 
-/* request style end */
+/* request style start */
 
 .request {
   background-image: url(/Img/request/svg/Rectangle.svg);
@@ -335,3 +334,174 @@ img {
 .request__form-field:active {
   background: #8f8c84;
 }
+
+/* request style end */
+
+/* video style start */
+
+.video {
+  width: 100%;
+  margin-bottom: 180px;
+}
+
+.video__container {
+  max-width: 719px;
+  height: 650px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.video__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* video style end */
+
+/* map style start */
+
+.map {
+  margin-bottom: 180px;
+}
+
+.map__container {
+  margin-left: 405px;
+  margin-right: 405px;
+}
+.map__title {
+  margin-bottom: 100px;
+  font-family: "Playfair Display";
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+
+/* map style end */
+
+/* last style start */
+.last {
+  margin-bottom: 180px;
+}
+
+.last__container {
+  margin-left: 402.5px;
+  margin-right: 402.5px;
+}
+.last__tile {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+.last__form {
+}
+.last__wrap {
+  display: flex;
+}
+.last__subtitle {
+  width: 255px;
+  height: 28px;
+  margin-top: 61px;
+  margin-right: 35px;
+  font-family: "Raleway";
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #e7e7e7;
+}
+.last__form-info {
+  display: flex;
+  margin-top: 50px;
+}
+.last__form-field {
+  width: 255px;
+  height: 50px;
+  text-align: center;
+  background: #ffffff;
+  opacity: 0.2;
+  margin-right: 30px;
+  transition: 0.55s all;
+}
+.last__form-button {
+  margin-top: 50px;
+  font-family: "Raleway";
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  width: 255px;
+  height: 50px;
+  background: #d4c17f;
+  transition: 0.55s all;
+}
+
+/* last style end */
+
+/* footer start*/
+.footer {
+  background: #2d343c;
+  padding: 60px 0px;
+  padding-left: 405px;
+  padding-right: 405px;
+}
+
+.footer__item {
+  display: flex;
+}
+.footer__logo {
+  margin-right: 452px;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__nav li {
+  margin-bottom: 15px;
+}
+
+.footer__nav a:hover,
+.footer__nav a:active {
+  color: #d4c17f;
+}
+
+.footer__menu-color {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #d4c17f;
+  text-decoration: none;
+}
+.footer__menu-link {
+  font-family: "Raleway";
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__menu-text {
+  font-family: "Raleway";
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.footer__menu-logo {
+  max-width: 100%;
+}
+.footer__menu-pic {
+  margin-right: 20px;
+}
+
+/* footer end */
