@@ -83,12 +83,15 @@ body {
 /* home style start*/
 
 .home {
+  margin-bottom: 120px;
   position: relative;
-  min-height: 714px;
-  padding: 170px 0px;
+  min-height: 470px;
+  padding: 200px 0px;
 }
-.home__content {
+.home__container {
   max-width: 582px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .home__title {
   font-family: "Playfair Display", serif;
@@ -118,6 +121,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 .home__bg-img img {
@@ -126,3 +130,108 @@ body {
   object-fit: cover;
 }
 /* home style end*/
+
+/* about style start*/
+.about {
+  margin-bottom: 120px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 794px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__container::before {
+  content: attr(data-number);
+  font-family: "Playfair Display", serif;
+  font-size: 400px;
+  line-height: 150px;
+  text-align: center;
+  opacity: 0.02;
+  position: absolute;
+  padding-left: 798px;
+}
+
+.about__card {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.about__card img {
+  margin-bottom: 53px;
+}
+/* about style end*/
+
+/* preview style start*/
+
+.preview {
+  margin-bottom: 180px;
+}
+.preview__container {
+  max-width: 1100px;
+  max-height: 806px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preview__caption {
+  max-height: 36px;
+  margin-bottom: 100px;
+}
+
+.preview__title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  line-height: 48px;
+  color: #d4c17f;
+}
+.preview__cards {
+  display: flex;
+  justify-content: space-between;
+}
+.preview__cards:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.preview__card {
+  position: relative;
+  width: 535px;
+}
+
+.preview__card::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.preview__card-title {
+  font-size: 24px;
+  line-height: 28px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 3;
+}
+
+.preview__card img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+/* preview style end*/
+
+/* request style start*/
+
+/* request style end*/
